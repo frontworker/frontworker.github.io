@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --perspective: 0px; 
+}
+body,html {
+    width: 100%;
+    background-color: #0f0e17;
+}
+
+#common-background {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: var(--perspective);
+    width: 100%;
+    height: 100vh;
+    background-image: url('../icon/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.categories-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #0f0e17;
+    box-shadow: 0 0 3px #ffffff inset;
+    border-radius: 50%;
+}
+.item-pancel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    font-size: 10px;
+}
